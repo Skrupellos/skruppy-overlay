@@ -1,0 +1,15 @@
+--- ansi2gif-0.10.0-orig/Makefile	2014-10-10 19:35:10.502440771 +0200
++++ ansi2gif-0.10.0/Makefile	2014-10-10 19:52:52.235453327 +0200
+@@ -36,9 +36,9 @@
+ 	cd sample_ansi_art && make clean
+ 
+ install:	ansi2gif
+-	cp ansi2gif /usr/local/bin
+-	cp ansi2png /usr/local/bin
+-	cp ansi2eps /usr/local/bin
++	install -D ansi2gif $(DESTDIR)/usr/bin/ansi2gif
++	install -D ansi2png $(DESTDIR)/usr/bin/ansi2png
++	install -D ansi2eps $(DESTDIR)/usr/bin/ansi2eps
+ 	
+ ansi2gif:	ansi2gif.o whirlgif.o gifdecod.o gifencod.o gifdecod.o pcfont.o
+ 	$(CC) $(LFLAGS) -o ansi2gif ansi2gif.o whirlgif.o gifencod.o gifdecod.o pcfont.o
