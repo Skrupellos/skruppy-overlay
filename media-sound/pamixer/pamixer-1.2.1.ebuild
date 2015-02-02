@@ -13,7 +13,7 @@ EGIT_COMMIT="${PV}"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND="dev-libs/boost

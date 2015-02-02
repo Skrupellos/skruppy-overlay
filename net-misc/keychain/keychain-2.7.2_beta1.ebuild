@@ -8,7 +8,7 @@ SRC_URI="http://build.funtoo.org/distfiles/keychain/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND=""
