@@ -1,0 +1,11 @@
+--- a/dnssec-trigger-script.in	2015-02-02 08:00:24.677800773 +0100
++++ b/dnssec-trigger-script.in	2015-02-02 08:00:42.190629310 +0100
+@@ -190,7 +190,7 @@
+                 if fields.pop(0) in ('forward', 'forward:'):
+                     fields.pop(0)
+                 secure = False
+-                if fields[0] == '+i':
++                if fields and fields[0] == '+i':
+                     secure = True
+                     fields.pop(0)
+                 self.cache[name] = set(fields[3:]), secure
